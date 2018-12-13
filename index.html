@@ -21,7 +21,8 @@
       window.$docsify = {
         auto2top: true,
         alias: {
-          '/.*/_sidebar.md': '/_sidebar.md'
+          '/.*/_sidebar.md': '/_sidebar.md',
+          '/(.*)': 'https://raw.githubusercontent.com/noahbuscher/Handbook/master/$1'
         },
         loadSidebar: true,
         maxLevel: 2,
