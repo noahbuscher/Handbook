@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>Walkthrough Handbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 
-  <!-- NOTE: Delegate to theme later -->
-  <style media="screen">
-    .app-name-link > img {
-      max-width: 200px;
-    }
-  </style>
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      auto2top: true,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      loadSidebar: true,
-      maxLevel: 2,
-      subMaxLevel: 2,
-      basePath: '/',
-      name: 'Walkthrough Handbook',
-      logo: '/_media/logo.png',
-      themeColor: '#2a95f1',
-      search: {
-        noData: {
-          '/': 'No results!'
+    <!-- NOTE: Delegate to theme later -->
+    <style media="screen">
+      .app-name-link > img {
+        max-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        auto2top: true,
+        alias: {
+          '/.*/_sidebar.md': '/_sidebar.md'
         },
-        paths: 'auto',
-        placeholder: {
-          '/': 'Search'
-        }
-      },
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      plugins: [
-        function (hook, vm) {
-          hook.beforeEach(function (html) {
-            return html.replace(/(http|https):\/\/github\.com\/WalkthroughVR\/Handbook\/blob\/master\//g, '/');
-          });
-        }
-      ]
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-</body>
+        loadSidebar: true,
+        maxLevel: 2,
+        subMaxLevel: 2,
+        basePath: '/',
+        name: 'Walkthrough Handbook',
+        logo: '/_media/logo.png',
+        themeColor: '#2a95f1',
+        search: {
+          noData: {
+            '/': 'No results!'
+          },
+          paths: 'auto',
+          placeholder: {
+            '/': 'Search'
+          }
+        },
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        plugins: [
+          function (hook, vm) {
+            hook.beforeEach(function (html) {
+              return html.replace(/(http|https):\/\/github\.com\/WalkthroughVR\/Handbook\/blob\/master\//g, '/');
+            });
+          }
+        ]
+      }
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  </body>
 </html>
